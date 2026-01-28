@@ -1,4 +1,30 @@
 /* =====================================================
+   HERO SMOOTH SCROLL
+===================================================== */
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", e => {
+    const targetId = link.getAttribute("href");
+    const target = document.querySelector(targetId);
+
+    if (!target) return;
+
+    e.preventDefault();
+
+    const headerOffset = 0; // si luego tenés header sticky, poné su altura acá
+    const elementPosition = target.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  });
+});
+
+
+
+/* =====================================================
    HERO PARALLAX (TITLE + VIDEO)
 ===================================================== */
 

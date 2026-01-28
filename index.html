@@ -214,10 +214,10 @@
         </h3>
 
         <ul>
-          <li><strong>HTML5</strong> — semántica y accesibilidad básica</li>
+          <li><strong>HTML5</strong> — Semántica y accesibilidad</li>
           <li><strong>CSS3</strong> — Flexbox, Grid y animaciones</li>
           <li><strong>JavaScript</strong> — ES6+, DOM y lógica de UI</li>
-          <li><strong>React</strong> — componentes, estado y buenas prácticas</li>
+          <li><strong>React</strong> — Componentes y accesibilidad</li>
         </ul>
       </div>
     </div>
@@ -263,12 +263,24 @@
   </div>
 </section>
 
-
 <section class="visual-statement">
   <video autoplay muted loop playsinline>
-    <source src="videos/STG_boost.mp4" type="video/mp4">
+    <!-- MOBILE -->
+    <source
+      src="videos/STG-boost-vertical.mp4"
+      type="video/mp4"
+      media="(max-width: 768px)"
+    >
+
+    <!-- DESKTOP -->
+    <source
+      src="videos/STG-boost.mp4"
+      type="video/mp4"
+      media="(min-width: 769px)"
+    >
   </video>
 </section>
+
 
 <section id="contact" class="contact reveal">
   <div class="contact-inner">
@@ -279,11 +291,6 @@
       Me interesa formar parte de equipos donde pueda seguir creciendo como
       <strong>Front-End Developer</strong>, aportar criterio visual, código claro
       y aprender buenas prácticas en entornos reales.
-    </p>
-
-    <p class="contact-availability">
-      Disponibilidad laboral:
-      <strong>remoto · full-time · part-time</strong>
     </p>
 
 <div class="contact-divider"></div>
