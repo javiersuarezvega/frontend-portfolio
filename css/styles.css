@@ -272,8 +272,24 @@ body {
 
 .top-left { top: 2rem; left: 2rem; }
 .top-right { top: 2rem; right: 2rem; }
-.bottom-left { bottom: 2rem; left: 2rem; color: rgba(56,189,248,.85); }
-.bottom-right { bottom: 2rem; right: 2rem; }
+
+.bottom-center {
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  color: rgba(56,189,248,0.85);
+}
+
+@media (max-width: 768px) {
+  .bottom-center {
+    bottom: 1.6rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+  }
+}
+
 
 /* ================= ABOUT ================= */
 
